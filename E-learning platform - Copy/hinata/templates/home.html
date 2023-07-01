@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SENSEI</title>
+</head>
+<body><div>
+  <header>
+    <div class="container">
+      <nav>
+        <img src="https://imagetolink.com/ib/jBNNBgfvGJ.jpg" alt="img" id="logo">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="/courses/">Courses</a></li>
+          <li><a href="/chat/">Chat</a></li>
+          <li><a href="mailto:oiasysguidance@gmail.com">Support</a></li>
+          <li>
+            <a href="/Code Editor/">CodeEditor</a>
+          </li> 
+          <li >
+            <a  href="{% url 'logout' %}">logout</a>
+          </li>         
+        </ul>
+      </nav>
+      <div class="obito">
+        {{request.user.username}}
+      </div>
+      <h1>Learn from anywhere, anytime</h1>
+      <p>Join our online Community and take control of your learning</p>
+      <a href="https://discord.gg/D7UmcyQ4Us" class="button">Join Now</a>
+    </div>
+  </header>
+  <div class="moving-div">
+  <section class="features">
+    <div class="container">
+      <div class="feature">
+        <h2>Learn Anything</h2>
+        <p>Choose from a wide range of courses on various topics and subjects</p>
+      </div>
+      <div class="feature">
+        <i class="fa fa-clock-o fa-4x"></i>
+        <h2>Flexible Learning</h2>
+        <p>Learn at your own pace and schedule, no need to rush or miss a class</p>
+      </div>
+      <div class="feature">
+        <i class="fa fa-user fa-4x"></i>
+        <h2>Expert Instructors</h2>
+        <p>Learn from industry experts and professionals who share their knowledge and experience</p>
+      </div>
+    </div>
+  </section>
+  <section class="courses">
+    <h2>Popular Courses</h2>
+    <div class="container">
+      <div class="course">
+        <img src="https://miro.medium.com/v2/resize:fit:775/0*rZecOAy_WVr16810" alt="Course 1">
+        <h3>Meachine Learning</h3>
+        <p>Learn the basics of Meachine Learning</p>
+        <a href="ml/" class="button">Enroll Now</a>
+      </div>
+      <br>
+      <div class="course1">
+        <img src="https://www.analyticsinsight.net/wp-content/uploads/2020/11/Artificial-Intelligence-5.jpg" alt="Course 2">
+        <h3>Web Development</h3>
+        <p>Learn how to build responsive and dynamic websites using HTML, CSS, and JavaScript</p>
+        <a href="web/" class="button">Enroll Now</a>
+      </div>
+      <br>
+      <div class="course2">
+        <img src="https://media.istockphoto.com/id/1364317541/photo/data-scientists-hand-of-programmer-touching-and-analyzing-development-at-various-information.jpg?b=1&s=170667a&w=0&k=20&c=6Tfu775xvgW8XbfT45IJSsniRJfzGi3_UxeB7Yz5tAY=" alt="Course 3">
+        <h3>Data Science</h3>
+        <p>Learn how to analyze and visualize data using Python and popular data science libraries</p>
+        <a href="ds/" class="button">Enroll Now</a>
+      </div>
+    </div>
+  </section>
+  </div>
+</div>
+  <footer>
+    <div class="gokul">
+      
+      <nav>
+        <ul>
+          <li><a href="https://docs.google.com/document/d/17FUhxbwt6TEagX-cd4qa2f9oj5TfNH5L/edit?usp=drive_link&ouid=104288806568545765513&rtpof=true&sd=true">Terms of Service</a></li>
+          <li><a href="https://docs.google.com/document/d/138zPGpXSpZHAZ6spGOmNQ_ZuUp2qmjmW/edit?usp=drive_link&ouid=104288806568545765513&rtpof=true&sd=true">Privacy Policy</a></li>
+          <li><a href="https://docs.google.com/document/d/1dAbZe_WOeHlMqvLnnlgf8wgknxoPtMEV/edit?usp=drive_link&ouid=104288806568545765513&rtpof=true&sd=true">FAQ</a></li>
+          <li><p>© 2023 E-Learning Platform</p></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.hero {
+  background-image: url('');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fff;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.btn {
+  display: inline-block;
+  background-color: #fff;
+  color: #333;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+.button {
+  background-color: #4CAF50; 
+  border: none; 
+  color: white; 
+  padding: 12px 24px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 16px; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #3e8e41; 
+}
+nav {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  margin-right: 20px;
+}
+
+li:last-child {
+  margin-right: 0;
+}
+
+img {
+  width: 25%; /* Set the width to 50% of the parent container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+.container {
+  float: right;
+  width: 50%;
+  padding: 16px;
+}
+#logo{
+  position:absolute;
+  top: 6%;
+  left: 0.5%;
+  width: 50px;
+  border-radius:90%;
+}
+.obito{
+  position:absolute;
+  top: 4vmax;
+  left: 150vmin;
+  width: 15vmax;
+}
+</style>
+</body></html>
